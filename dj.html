@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>멜론DJ>투데이>멜론</title>
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link href="css/dj.css" rel="stylesheet">
+    <script src="js/script.js" rel="script"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300;400&family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <wrap class="wrap">
+    <header class="header">
+        <div class="section1">
+            <div class="gnb">
+                <div class="util_menu">
+                    <div class="left_menu">
+                        <li><a href="#">멜론 티켓</a></li>
+                    </div>
+                    <div class="right_menu">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="img/icon1.png" class="icon1" alt="이용권구매이미지">이용권구매</a>｜
+                            </li>
+                            <li><a href="#">멜론혜택관</a>｜</li>
+                            <li><a href="#">이벤트</a>｜</li>
+                            <li><a href="#">공지사항</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class= "section2">
+            <!--이나시작-->
+            <!--자바스크립트는 X-->
+            <div class="logowrap">
+                <a href="http://qtrww.dothome.co.kr/melon"><img src="img/logo_melon142x99.png" class="logo" alt="logo"></a>
+                <div class="search">
+                    <form autocomplete="off" onsubmit="return false">
+                        <fieldset>
+                            <input type="text" class="searchBox" placeholder="6월 밤하늘의 딸기 색깔 달, IU'strawberry moon'" maxlength="15">
+                            <button type="submit" class="searchButton">
+                        </fieldset>
+                    </form>
+                </div>
+
+                <!--이나 또 시작 실시간랭킹-->
+                <div class="realtime_keyword">
+                    <img src="img//bg_loce_151207.png">
+                    <div class="rolling_box">
+                        <ul id="rolling_box">
+                            <li class="card_sliding" id="first">
+                                <p>얍얍</p>
+                            </li>
+                            <li class="" id="second">
+                                <p></p>
+                            </li>
+                            <li class="" id="third">
+                                <p></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--이나 끝-->
+
+                <div class="cmn_banner">
+                    <img src="img/kakaopage.jpg" alt="광고">
+                    <button class="btn_left">&lt;</button>
+                    <button class="btn_right">&gt;</button>
+                </div>
+
+            </div>
+            <!--이나끝-->
+
+        
+
+            <div class="gnb_menu">
+                <ul class="gnb_menu1">
+                <li class="nth1">
+                    <a href="#">멜론차트</a>
+                </li>
+                <li class="nth2">
+                    <a href="http://qtrww.dothome.co.kr/melon/latest.html">최신음악</a>
+                </li>
+                <li class="nth3">
+                    <a href="#">장르음악</a>
+                </li>
+                <li class="nth4">
+                    <a href="#">멜론DJ</a>
+                </li>
+                <li class="nth5">
+                    <a href="#">멜론TV</a>
+                </li>
+                <li class="nth6">
+                    <a href="#">스타포스트</a>
+                </li>
+                <li class="nth7">
+                    <a href="#">매거진</a>
+                </li>
+                <li class="nth8">
+                    <a href="#">뮤직어워드</a>
+                </li>
+                <li class="nth9">
+                    <a href="#">어학</a>
+                </li>
+            </ul>
+            <div class="sub_gnb">
+                <a href="#">마이뮤직</a>
+            </div>
+        </div>
+        <div class="section3">
+            <div class="lay_menu">
+                <ul>
+                    <li><a href="#">투데이</a></li>
+                    <li><a href="#">전문가 선곡</a></li>
+                    <li><a href="#">#테마장르</a></li>
+                    <li><a href="#">파워DJ</a></li>
+                    <li><a href="#">인기</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</header>
+        <section class="con">
+            <div class="contents">
+                <div class="wrap_contents1">
+                    <div class="wrap_search_dj">
+                        <h1 class="title">투데이</h1>
+                        <div class="search_dj">
+                            <div class="select_wrap">
+                                <select name="job" class="select_tag">
+                                    <option value="태그">태그</option>
+                                    <option value="플레이리스트">플레이리스트</option>
+                                    <option value="닉네임">닉네임</option>
+                                </select>
+                            </div>
+                            <div class="blogowrap">
+                                <div class="bsearch">
+                                    <form autocomplete="off" onsubmit="return false" >
+                                        <fieldset class="search_tag">
+                                            <input class="search_tag_input" type="text" id="bsearchBox" maxlength="20"placeholder="# 원하는 태그를 입력해주세요.">
+                                            <button type="submit" class="bsearchButton">
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                            <button class="dj"><a href="#">DJ 신청하기</a></button>
+                        </div>
+                    </div>
+                    <h2 class="today_what">10월 25일 오늘은 뭘 듣지?</h2><br>
+                    <div class="what_contents">
+                        <div class="what_contents1">
+                            <div class="top_img"> 
+                                <div class="profile1_img">
+                                    <img src="img/profile1.jpg" alt="프로필사진1" class="profileImg1">    
+                                </div>
+                                <div class="profile1_icon">
+                                    <img src="img/dj1.png" alt="dj아이콘1" class="dj_icon1">  
+                                </div>
+                                <img src="img/contents1.jpg" alt="콘텐츠1" class="imgcontents1">
+                                    <div class="contents1_text">
+                                        <p class="contents1_text1">활기찬 아침의 시작! 트렌디 '댄스'</p>
+                                        <p class="contents1_text2">대중가요마스터</p>
+                                        <a href="#"><img src="img/heart.png" alt="빈하트" class="heart1"></a>
+                                        <p class="contents1_text3">2,460&nbsp;&nbsp;&nbsp;ㅣ&nbsp;&nbsp;&nbsp;50곡</p>
+                                        <button><a href="#">#트렌디</a></button><button><a href="#">#댄스</a></button>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="what_contents2">
+                            <div class="top_img">
+                                <div class="profile2_img">
+                                    <img src="img/profile2.jpg" alt="프로필사진2" class="profileImg2">    
+                                </div>
+                                <div class="profile2_icon">
+                                    <img src="img/dj2.png" alt="dj아이콘2" class="dj_icon2">  
+                                </div>
+                                <img src="img/contents2.jpg" alt="콘텐츠2" class="imgcontents2">
+                                    <div class="contents2_text">
+                                        <p class="contents2_text1">살다가 한 번쯤 겪는 이야기, 이별 발라드</p>
+                                        <p class="contents2_text2">sweetmind</p>
+                                        <a href="#"><img src="img/heart.png" alt="빈하트" class="heart1"></a>
+                                        <p class="contents2_text3">4,936&nbsp;&nbsp;&nbsp;ㅣ&nbsp;&nbsp;&nbsp;302곡</p>
+                                        <button><a href="#">#발라드</a></button><button><a href="#">#이별</a></button>
+                                    </div>
+
+                            </div>
+                        </div>
+                        <div class="what_contents3">
+                            <div class="top_img">
+                                <div class="profile3_img">
+                                    <img src="img/profile3.jpg" alt="프로필사진3" class="profileImg3">    
+                                </div>
+                                <div class="profile3_icon">
+                                    <img src="img/dj3.png" alt="dj아이콘3" class="dj_icon3">  
+                                </div>
+                                <img src="img/contents3.jpg" alt="콘텐츠3" class="imgcontents3">
+                                    <div class="contents3_text">
+                                        <p class="contents3_text1">숨이 차도록 벅찼던 순간의 'OST'</p>
+                                        <p class="contents3_text2">별이빛밤</p>
+                                        <a href="#"><img src="img/heart.png" alt="빈하트" class="heart1"></a>
+                                        <p class="contents3_text3">1,176&nbsp;&nbsp;&nbsp;ㅣ&nbsp;&nbsp;&nbsp;113곡</p>
+                                        <button><a href="#">#OST</a></button><button><a href="#">#기분전환</a></button>
+                                    </div>
+
+                            </div>
+                        </div>
+                        <div class="what_contents4">
+                            <div class="top_img">
+                                <div class="profile4_img">
+                                    <img src="img/profile4.jpg" alt="프로필사진4" class="profileImg4">    
+                                </div>
+                                <div class="profile4_icon">
+                                    <img src="img/dj4.png" alt="dj아이콘4" class="dj_icon4">  
+                                </div>
+                                <img src="img/contents4.jpg" alt="콘텐츠4" class="imgcontents4">
+                                    <div class="contents4_text">
+                                        <p class="contents4_text1">뱀파이어로 돌아온 'NCT 127'의 favorite한 곡</p>
+                                        <p class="contents4_text2">이마크당</p>
+                                        <a href="#"><img src="img/heart.png" alt="빈하트" class="heart1"></a>
+                                        <p class="contents4_text3">4,325&nbsp;&nbsp;&nbsp;ㅣ&nbsp;&nbsp;&nbsp;82곡</p>
+                                        <button><a href="#">#알앤비</a></button><button><a href="#">#댄스</a></button>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                
+                </div>
+                <div class="wrap_contents2">
+                    <div class="contents2">
+                        <div class="cd_img">
+                            <img src="img/recommend.jpg" alt="노래추천" class="con2_img1">
+                            <img src="img/pick_song_icon.png" alt="따옴표" class="con2_img2">
+                        </div>
+                        <div class="right_cd">
+                            <div class="right_cd_text">
+                                <p class="picksong153">PICK송 #153</p><br>
+                                <p class="autumn">가을 감성 충전, 마음을 촉촉하게 적셔주는 노래를 추천해주세요.</p>
+                            </div>
+                            <div class="right_cd_img">
+                                <div class="people1">
+                                    <img src="img/cd1.jpg" alt="cd옆1번째" class="cd1">
+                                </div>
+                                <div class="people2">    
+                                    <img src="img/cd2.jpg" alt="cd옆2번째" class="cd2">
+                                </div>
+                                <div class="people3">
+                                    <img src="img/cd3.jpg" alt="cd옆3번째" class="cd3">
+                                </div>
+                                <div class="people4">
+                                    <img src="img/cd4.jpg" alt="cd옆4번째" class="cd4">
+                                </div>
+                                <div class="people5">
+                                    <img src="img/right_cd.png" alt="..." class="cd5">
+                                </div>
+                                <p><span class="sixteen">16</span>명 참여중</p>
+                                <button class="participate"><a href="#">참여하기</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap_contents3">
+                    <div class="contents3">
+                        <h1>인기 태그</h1>
+                        <button class="contents3_button1"><a href="#">#선선한</a></button>
+                        <button class="contents3_button2"><a href="#">#브이로그</a></button>
+                        <button class="contents3_button3"><a href="#">#리메이크</a></button>
+                        <button class="contents3_button4"><a href="#">#기분전환</a></button>
+                        <button class="contents3_button5"><a href="#">#발라드</a></button>
+                        <button class="contents3_button6"><a href="#">#브런치</a></button>
+                        <button class="contents3_button7"><a href="#">#mbti</a></button>
+                        <button class="contents3_button8"><a href="#">#잠안올때</a></button>
+                        <button class="contents3_button9"><a href="#">#OST</a></button>
+                    </div>
+                </div>
+                <div class="wrap_contents4">
+                    <div class="wrap_contents4_1">
+                        <h2 class="today_what">10월 25일 오늘은 뭘 듣지?</h2><br>
+                        <div class="what_contents">
+                            <div class="what_contents1">
+                                <div class="top_img">
+                                    <div class="profile1_img">
+                                        <img src="img/profile1.jpg" alt="프로필사진1" class="profileImg1">
+                                    </div>
+                                    <div class="profile1_icon">
+                                        <img src="img/dj1.png" alt="dj아이콘1" class="dj_icon1">
+                                    </div>
+                                    <img src="img/contents1.jpg" alt="콘텐츠1" class="imgcontents1">
+                                        <div class="contents1_text">
+                                            <p class="contents1_text1">활기찬 아침의 시작! 트렌디 '댄스'</p>
+                                            <p class="contents1_text2">대중가요마스터</p>
+                                            <a href="#"><img src="img/heart.png" alt="빈하트" class="heart1"></a>
+                                            <p class="contents1_text3">2,460&nbsp;&nbsp;&nbsp;ㅣ&nbsp;&nbsp;&nbsp;50곡</p>
+                                            <button><a href="#">#트렌디</a></button><button><a href="#">#댄스</a></button>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="what_contents2">
+                                <div class="top_img">
+                                    <div class="profile2_img">
+                                        <img src="img/profile2.jpg" alt="프로필사진2" class="profileImg2">
+                                    </div>
+                                    <div class="profile2_icon">
+                                        <img src="img/dj2.png" alt="dj아이콘2" class="dj_icon2">
+                                    </div>
+                                    <img src="img/contents2.jpg" alt="콘텐츠2" class="imgcontents2">
+                                        <div class="contents2_text">
+                                            <p class="contents2_text1">살다가 한 번쯤 겪는 이야기, 이별 발라드</p>
+                                            <p class="contents2_text2">sweetmind</p>
+                                            <a href="#"><img src="img/heart.png" alt="빈하트" class="heart1"></a>
+                                            <p class="contents2_text3">4,936&nbsp;&nbsp;&nbsp;ㅣ&nbsp;&nbsp;&nbsp;302곡</p>
+                                            <button><a href="#">#발라드</a></button><button><a href="#">#이별</a></button>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="what_contents3">
+                                <div class="top_img">
+                                    <div class="profile3_img">
+                                        <img src="img/profile3.jpg" alt="프로필사진3" class="profileImg3">
+                                    </div>
+                                    <div class="profile3_icon">
+                                        <img src="img/dj3.png" alt="dj아이콘3" class="dj_icon3">
+                                    </div>
+                                    <img src="img/contents3.jpg" alt="콘텐츠3" class="imgcontents3">
+                                        <div class="contents3_text">
+                                            <p class="contents3_text1">숨이 차도록 벅찼던 순간의 'OST'</p>
+                                            <p class="contents3_text2">별이빛밤</p>
+                                            <a href="#"><img src="img/heart.png" alt="빈하트" class="heart1"></a>
+                                            <p class="contents3_text3">1,176&nbsp;&nbsp;&nbsp;ㅣ&nbsp;&nbsp;&nbsp;113곡</p>
+                                            <button><a href="#">#OST</a></button><button><a href="#">#기분전환</a></button>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="what_contents4">
+                                <div class="top_img">
+                                    <div class="profile4_img">
+                                        <img src="img/profile4.jpg" alt="프로필사진4" class="profileImg4">
+                                    </div>
+                                    <div class="profile4_icon">
+                                        <img src="img/dj4.png" alt="dj아이콘4" class="dj_icon4">
+                                    </div>
+                                    <img src="img/contents4.jpg" alt="콘텐츠4" class="imgcontents4">
+                                        <div class="contents4_text">
+                                            <p class="contents4_text1">뱀파이어로 돌아온 'NCT 127'의 favorite한 곡</p>
+                                            <p class="contents4_text2">이마크당</p>
+                                            <a href="#"><img src="img/heart.png" alt="빈하트" class="heart1"></a>
+                                            <p class="contents4_text3">4,325&nbsp;&nbsp;&nbsp;ㅣ&nbsp;&nbsp;&nbsp;82곡</p>
+                                            <button><a href="#">#알앤비</a></button><button><a href="#">#댄스</a></button>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrap_contents4_2">
+                        <h2 class="today_what">10월 25일 오늘은 뭘 듣지?</h2><br>
+                        <div class="what_contents">
+                            <div class="what_contents1">
+                                <div class="top_img">
+                                    <div class="profile1_img">
+                                        <img src="img/profile1.jpg" alt="프로필사진1" class="profileImg1">
+                                    </div>
+                                    <div class="profile1_icon">
+                                        <img src="img/dj1.png" alt="dj아이콘1" class="dj_icon1">
+                                    </div>
+                                    <img src="img/contents1.jpg" alt="콘텐츠1" class="imgcontents1">
+                                        <div class="contents1_text">
+                                            <p class="contents1_text1">활기찬 아침의 시작! 트렌디 '댄스'</p>
+                                            <p class="contents1_text2">대중가요마스터</p>
+                                            <a href="#"><img src="img/heart.png" alt="빈하트" class="heart1"></a>
+                                            <p class="contents1_text3">2,460&nbsp;&nbsp;&nbsp;ㅣ&nbsp;&nbsp;&nbsp;50곡</p>
+                                            <button><a href="#">#트렌디</a></button><button><a href="#">#댄스</a></button>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="what_contents2">
+                                <div class="top_img">
+                                    <div class="profile2_img">
+                                        <img src="img/profile2.jpg" alt="프로필사진2" class="profileImg2">
+                                    </div>
+                                    <div class="profile2_icon">
+                                        <img src="img/dj2.png" alt="dj아이콘2" class="dj_icon2">
+                                    </div>
+                                    <img src="img/contents2.jpg" alt="콘텐츠2" class="imgcontents2">
+                                        <div class="contents2_text">
+                                            <p class="contents2_text1">살다가 한 번쯤 겪는 이야기, 이별 발라드</p>
+                                            <p class="contents2_text2">sweetmind</p>
+                                            <a href="#"><img src="img/heart.png" alt="빈하트" class="heart1"></a>
+                                            <p class="contents2_text3">4,936&nbsp;&nbsp;&nbsp;ㅣ&nbsp;&nbsp;&nbsp;302곡</p>
+                                            <button><a href="#">#발라드</a></button><button><a href="#">#이별</a></button>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="what_contents3">
+                                <div class="top_img">
+                                    <div class="profile3_img">
+                                        <img src="img/profile3.jpg" alt="프로필사진3" class="profileImg3">
+                                    </div>
+                                    <div class="profile3_icon">
+                                        <img src="img/dj3.png" alt="dj아이콘3" class="dj_icon3">
+                                    </div>
+                                    <img src="img/contents3.jpg" alt="콘텐츠3" class="imgcontents3">
+                                        <div class="contents3_text">
+                                            <p class="contents3_text1">숨이 차도록 벅찼던 순간의 'OST'</p>
+                                            <p class="contents3_text2">별이빛밤</p>
+                                            <a href="#"><img src="img/heart.png" alt="빈하트" class="heart1"></a>
+                                            <p class="contents3_text3">1,176&nbsp;&nbsp;&nbsp;ㅣ&nbsp;&nbsp;&nbsp;113곡</p>
+                                            <button><a href="#">#OST</a></button><button><a href="#">#기분전환</a></button>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="what_contents4">
+                                <div class="top_img">
+                                    <div class="profile4_img">
+                                        <img src="img/profile4.jpg" alt="프로필사진4" class="profileImg4">
+                                    </div>
+                                    <div class="profile4_icon">
+                                        <img src="img/dj4.png" alt="dj아이콘4" class="dj_icon4">
+                                    </div>
+                                    <img src="img/contents4.jpg" alt="콘텐츠4" class="imgcontents4">
+                                        <div class="contents4_text">
+                                            <p class="contents4_text1">뱀파이어로 돌아온 'NCT 127'의 favorite한 곡</p>
+                                            <p class="contents4_text2">이마크당</p>
+                                            <a href="#"><img src="img/heart.png" alt="빈하트" class="heart1"></a>
+                                            <p class="contents4_text3">4,325&nbsp;&nbsp;&nbsp;ㅣ&nbsp;&nbsp;&nbsp;82곡</p>
+                                            <button><a href="#">#알앤비</a></button><button><a href="#">#댄스</a></button>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrap_contents4_3">
+                        <h2 class="today_what">10월 25일 오늘은 뭘 듣지?</h2><br>
+                        <div class="what_contents">
+                            <div class="what_contents1">
+                                <div class="top_img">
+                                    <div class="profile1_img">
+                                        <img src="img/profile1.jpg" alt="프로필사진1" class="profileImg1">
+                                    </div>
+                                    <div class="profile1_icon">
+                                        <img src="img/dj1.png" alt="dj아이콘1" class="dj_icon1">
+                                    </div>
+                                    <img src="img/contents1.jpg" alt="콘텐츠1" class="imgcontents1">
+                                        <div class="contents1_text">
+                                            <p class="contents1_text1">활기찬 아침의 시작! 트렌디 '댄스'</p>
+                                            <p class="contents1_text2">대중가요마스터</p>
+                                            <a href="#"><img src="img/heart.png" alt="빈하트" class="heart1"></a>
+                                            <p class="contents1_text3">2,460&nbsp;&nbsp;&nbsp;ㅣ&nbsp;&nbsp;&nbsp;50곡</p>
+                                            <button><a href="#">#트렌디</a></button><button><a href="#">#댄스</a></button>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="what_contents2">
+                                <div class="top_img">
+                                    <div class="profile2_img">
+                                        <img src="img/profile2.jpg" alt="프로필사진2" class="profileImg2">
+                                    </div>
+                                    <div class="profile2_icon">
+                                        <img src="img/dj2.png" alt="dj아이콘2" class="dj_icon2">
+                                    </div>
+                                    <img src="img/contents2.jpg" alt="콘텐츠2" class="imgcontents2">
+                                        <div class="contents2_text">
+                                            <p class="contents2_text1">살다가 한 번쯤 겪는 이야기, 이별 발라드</p>
+                                            <p class="contents2_text2">sweetmind</p>
+                                            <a href="#"><img src="img/heart.png" alt="빈하트" class="heart1"></a>
+                                            <p class="contents2_text3">4,936&nbsp;&nbsp;&nbsp;ㅣ&nbsp;&nbsp;&nbsp;302곡</p>
+                                            <button><a href="#">#발라드</a></button><button><a href="#">#이별</a></button>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="what_contents3">
+                                <div class="top_img">
+                                    <div class="profile3_img">
+                                        <img src="img/profile3.jpg" alt="프로필사진3" class="profileImg3">
+                                    </div>
+                                    <div class="profile3_icon">
+                                        <img src="img/dj3.png" alt="dj아이콘3" class="dj_icon3">
+                                    </div>
+                                    <img src="img/contents3.jpg" alt="콘텐츠3" class="imgcontents3">
+                                        <div class="contents3_text">
+                                            <p class="contents3_text1">숨이 차도록 벅찼던 순간의 'OST'</p>
+                                            <p class="contents3_text2">별이빛밤</p>
+                                            <a href="#"><img src="img/heart.png" alt="빈하트" class="heart1"></a>
+                                            <p class="contents3_text3">1,176&nbsp;&nbsp;&nbsp;ㅣ&nbsp;&nbsp;&nbsp;113곡</p>
+                                            <button><a href="#">#OST</a></button><button><a href="#">#기분전환</a></button>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="what_contents4">
+                                <div class="top_img">
+                                    <div class="profile4_img">
+                                        <img src="img/profile4.jpg" alt="프로필사진4" class="profileImg4">
+                                    </div>
+                                    <div class="profile4_icon">
+                                        <img src="img/dj4.png" alt="dj아이콘4" class="dj_icon4">
+                                    </div>
+                                    <img src="img/contents4.jpg" alt="콘텐츠4" class="imgcontents4">
+                                        <div class="contents4_text">
+                                            <p class="contents4_text1">뱀파이어로 돌아온 'NCT 127'의 favorite한 곡</p>
+                                            <p class="contents4_text2">이마크당</p>
+                                            <a href="#"><img src="img/heart.png" alt="빈하트" class="heart1"></a>
+                                            <p class="contents4_text3">4,325&nbsp;&nbsp;&nbsp;ㅣ&nbsp;&nbsp;&nbsp;82곡</p>
+                                            <button><a href="#">#알앤비</a></button><button><a href="#">#댄스</a></button>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrap_contents4_4">
+                        <h2 class="today_what">10월 25일 오늘은 뭘 듣지?</h2><br>
+                        <div class="what_contents">
+                            <div class="what_contents1">
+                                <div class="top_img">
+                                    <div class="profile1_img">
+                                        <img src="img/profile1.jpg" alt="프로필사진1" class="profileImg1">
+                                    </div>
+                                    <div class="profile1_icon">
+                                        <img src="img/dj1.png" alt="dj아이콘1" class="dj_icon1">
+                                    </div>
+                                    <img src="img/contents1.jpg" alt="콘텐츠1" class="imgcontents1">
+                                        <div class="contents1_text">
+                                            <p class="contents1_text1">활기찬 아침의 시작! 트렌디 '댄스'</p>
+                                            <p class="contents1_text2">대중가요마스터</p>
+                                            <a href="#"><img src="img/heart.png" alt="빈하트" class="heart1"></a>
+                                            <p class="contents1_text3">2,460&nbsp;&nbsp;&nbsp;ㅣ&nbsp;&nbsp;&nbsp;50곡</p>
+                                            <button><a href="#">#트렌디</a></button><button><a href="#">#댄스</a></button>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="what_contents2">
+                                <div class="top_img">
+                                    <div class="profile2_img">
+                                        <img src="img/profile2.jpg" alt="프로필사진2" class="profileImg2">
+                                    </div>
+                                    <div class="profile2_icon">
+                                        <img src="img/dj2.png" alt="dj아이콘2" class="dj_icon2">
+                                    </div>
+                                    <img src="img/contents2.jpg" alt="콘텐츠2" class="imgcontents2">
+                                        <div class="contents2_text">
+                                            <p class="contents2_text1">살다가 한 번쯤 겪는 이야기, 이별 발라드</p>
+                                            <p class="contents2_text2">sweetmind</p>
+                                            <a href="#"><img src="img/heart.png" alt="빈하트" class="heart1"></a>
+                                            <p class="contents2_text3">4,936&nbsp;&nbsp;&nbsp;ㅣ&nbsp;&nbsp;&nbsp;302곡</p>
+                                            <button><a href="#">#발라드</a></button><button><a href="#">#이별</a></button>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="what_contents3">
+                                <div class="top_img">
+                                    <div class="profile3_img">
+                                        <img src="img/profile3.jpg" alt="프로필사진3" class="profileImg3">
+                                    </div>
+                                    <div class="profile3_icon">
+                                        <img src="img/dj3.png" alt="dj아이콘3" class="dj_icon3">
+                                    </div>
+                                    <img src="img/contents3.jpg" alt="콘텐츠3" class="imgcontents3">
+                                        <div class="contents3_text">
+                                            <p class="contents3_text1">숨이 차도록 벅찼던 순간의 'OST'</p>
+                                            <p class="contents3_text2">별이빛밤</p>
+                                            <a href="#"><img src="img/heart.png" alt="빈하트" class="heart1"></a>
+                                            <p class="contents3_text3">1,176&nbsp;&nbsp;&nbsp;ㅣ&nbsp;&nbsp;&nbsp;113곡</p>
+                                            <button><a href="#">#OST</a></button><button><a href="#">#기분전환</a></button>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="what_contents4">
+                                <div class="top_img">
+                                    <div class="profile4_img">
+                                        <img src="img/profile4.jpg" alt="프로필사진4" class="profileImg4">
+                                    </div>
+                                    <div class="profile4_icon">
+                                        <img src="img/dj4.png" alt="dj아이콘4" class="dj_icon4">
+                                    </div>
+                                    <img src="img/contents4.jpg" alt="콘텐츠4" class="imgcontents4">
+                                        <div class="contents4_text">
+                                            <p class="contents4_text1">뱀파이어로 돌아온 'NCT 127'의 favorite한 곡</p>
+                                            <p class="contents4_text2">이마크당</p>
+                                            <a href="#"><img src="img/heart.png" alt="빈하트" class="heart1"></a>
+                                            <p class="contents4_text3">4,325&nbsp;&nbsp;&nbsp;ㅣ&nbsp;&nbsp;&nbsp;82곡</p>
+                                            <button><a href="#">#알앤비</a></button><button><a href="#">#댄스</a></button>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                </div>
+                <!-- <div class="wrap_contents4">
+                    <div class="contents4_1">
+                        <h2 class="today_what4_1">센스 있는 조수석 주인, 나야 나!</h2><br>
+                        <div class="what_contents">
+                            <div class="what_contents4_1">
+                                <div class="top_img">
+                                    <div class="profile1_img">
+                                        <img src="img/profile1.jpg" alt="프로필사진1" class="profileImg1">
+                                    </div>
+                                    <div class="profile1_icon">
+                                        <img src="img/dj1.png" alt="dj아이콘1" class="dj_icon1">
+                                    </div>
+                                    <img src="img/contents1.jpg" alt="콘텐츠1" class="imgcontents1">
+                                        <div class="contents1_text">
+                                            <p class="contents1_text1">활기찬 아침의 시작! 트렌디 '댄스'</p>
+                                            <p class="contents1_text2">대중가요마스터</p>
+                                            <a href="#"><img src="img/heart.png" alt="빈하트" class="heart1"></a>
+                                            <p class="contents1_text3">2,460&nbsp;&nbsp;&nbsp;ㅣ&nbsp;&nbsp;&nbsp;50곡</p>
+                                            <button><a href="#">#트렌디</a></button><button><a href="#">#댄스</a></button>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="what_contents4_2">
+                                <div class="top_img">
+                                    <div class="profile2_img">
+                                        <img src="img/profile2.jpg" alt="프로필사진2" class="profileImg2">
+                                    </div>
+                                    <div class="profile2_icon">
+                                        <img src="img/dj2.png" alt="dj아이콘2" class="dj_icon2">
+                                    </div>
+                                    <img src="img/contents2.jpg" alt="콘텐츠2" class="imgcontents2">
+                                        <div class="contents2_text">
+                                            <p class="contents2_text1">살다가 한 번쯤 겪는 이야기, 이별 발라드</p>
+                                            <p class="contents2_text2">sweetmind</p>
+                                            <a href="#"><img src="img/heart.png" alt="빈하트" class="heart1"></a>
+                                            <p class="contents2_text3">4,936&nbsp;&nbsp;&nbsp;ㅣ&nbsp;&nbsp;&nbsp;302곡</p>
+                                            <button><a href="#">#발라드</a></button><button><a href="#">#이별</a></button>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="what_contents4_3">
+                                <div class="top_img">
+                                    <div class="profile3_img">
+                                        <img src="img/profile3.jpg" alt="프로필사진3" class="profileImg3">
+                                    </div>
+                                    <div class="profile3_icon">
+                                        <img src="img/dj3.png" alt="dj아이콘3" class="dj_icon3">
+                                    </div>
+                                    <img src="img/contents3.jpg" alt="콘텐츠3" class="imgcontents3">
+                                        <div class="contents3_text">
+                                            <p class="contents3_text1">숨이 차도록 벅찼던 순간의 'OST'</p>
+                                            <p class="contents3_text2">별이빛밤</p>
+                                            <a href="#"><img src="img/heart.png" alt="빈하트" class="heart1"></a>
+                                            <p class="contents3_text3">1,176&nbsp;&nbsp;&nbsp;ㅣ&nbsp;&nbsp;&nbsp;113곡</p>
+                                            <button><a href="#">#OST</a></button><button><a href="#">#기분전환</a></button>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="what_contents4_4">
+                                <div class="top_img">
+                                    <div class="profile4_img">
+                                        <img src="img/profile4.jpg" alt="프로필사진4" class="profileImg4">
+                                    </div>
+                                    <div class="profile4_icon">
+                                        <img src="img/dj4.png" alt="dj아이콘4" class="dj_icon4">
+                                    </div>
+                                    <img src="img/contents4.jpg" alt="콘텐츠4" class="imgcontents4">
+                                        <div class="contents4_text">
+                                            <p class="contents4_text1">뱀파이어로 돌아온 'NCT 127'의 favorite한 곡</p>
+                                            <p class="contents4_text2">이마크당</p>
+                                            <a href="#"><img src="img/heart.png" alt="빈하트" class="heart1"></a>
+                                            <p class="contents4_text3">4,325&nbsp;&nbsp;&nbsp;ㅣ&nbsp;&nbsp;&nbsp;82곡</p>
+                                            <button><a href="#">#알앤비</a></button><button><a href="#">#댄스</a></button>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                
+                </div> -->
+                
+                </div>
+            </div>
+        </section>
+        <div class="section3">
+            <div class="bnav">
+                <ul>
+                    <li><a href="#">멜론 6.0 둘러보기</a></li>
+                    <li><a href="#">멜론스튜디오</a></li>
+                    <li><a href="#">windows 플레이어</a></li>
+                    <li><a href="#">Mac 플레이어</a></li>
+                    <li><a href="#">iPad</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </div>
+            <footer class="footer">
+                <ul class="footer_ul_1">
+                    <li><a href="#">이용약관</a></li>
+                    <li class="footer_text2"><a href="#">위치기반서비스 이용약관</a></li>
+                    <li class="footer_text3"><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">청소년보호정책</a></li>
+                    <li><a href="#">제휴/프로모션문의</a></li>
+                    <li><a href="#">이메일주소무단수집거부</a></li>
+                    <li><a href="#">파트너센터</a></li>
+                </ul>
+                <ul class="footer_ul_2">
+                    <li>(주)카카오엔터테인먼트</li>
+                    <li>>경기도 성남시 분당구 판교역로 221</li>
+                    <li>대표이사 : 이진수, 김성수</li>
+                    <li>사업자등록번호 : 220-88-02594</li>
+                    <li>통신판매업신고번호 : 2018-성남분당B-0004</li>
+                    <li><a href="#">사업자정보확인&gt;</a></li>
+                </ul>
+                <ul class="footer_ul_3">
+                    <li>문의전화 : 1566-7727(평일 09:00-18:00, 유료)</li>
+                    <li>이메일 : melon_info&commat;kakaoent.com</li>
+                    <li>호스팅서비스사업자 : (주)카카오엔터테인먼트</li>
+                    <li>&commat; Kakao Entertainment Corp.</li>
+                </ul>
+            </footer>
+        </div>
+    </wrap>
+</body>
+
+</html>

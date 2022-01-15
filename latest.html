@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>최신음악>곡>멜론</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <link href="css/latest.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300;400&family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.png">
+</head>
+
+<body>
+    <wrap class="wrap">
+        <header class="header">
+            <div class="section1">
+                <div class="gnb">
+                    <div class="util_menu">
+                        <div class="left_menu">
+                            <li><a href="#">멜론 티켓</a></li>
+                        </div>
+                        <div class="right_menu">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/icon1.png" class="icon1" alt="이용권구매이미지">이용권구매</a>｜
+                                </li>
+                                <li><a href="#">멜론혜택관</a>｜</li>
+                                <li><a href="#">이벤트</a>｜</li>
+                                <li><a href="#">공지사항</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class= "section2">
+                <!--이나시작-->
+                <!--자바스크립트는 X-->
+                <div class="logowrap">
+                    <a href="http://qtrww.dothome.co.kr/melon"><img src="img/logo_melon142x99.png" class="logo" alt="logo"></a>
+                    <div class="search">
+                        <form autocomplete="off" onsubmit="return false">
+                            <fieldset>
+                                <input type="text" class="searchBox" placeholder="6월 밤하늘의 딸기 색깔 달, IU'strawberry moon'">
+                                <button type="submit" class="searchButton"></button>
+                            </fieldset>
+                        </form>
+                    </div>
+
+                    <!--이나 또 시작 실시간랭킹-->
+                    <div class="realtime_keyword">
+                        <img src="img//bg_loce_151207.png" alt="급상승">
+                        <div class="rolling_box">
+                            <ul id="rolling_box">
+                                <li class="card_sliding" id="first">
+                                    <p>얍얍</p>
+                                </li>
+                                <li class="" id="second">
+                                    <p></p>
+                                </li>
+                                <li class="" id="third">
+                                    <p></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--이나 끝-->
+
+                    <div class="cmn_banner">
+                        <img src="img/kakaopage.jpg" alt="광고">
+                        <button class="btn_left">&lt;</button>
+                        <button class="btn_right">&gt;</button>
+                    </div>
+
+                </div>
+                <!--이나끝-->
+
+                <div class="gnb_menu">
+                    <ul class="gnb_menu1">
+                        <li class="nth1">
+                            <a href="#">멜론차트</a>
+                        </li>
+                        <li class="nth2">
+                            <a href="#">최신음악</a>
+                        </li>
+                        <li class="nth3">
+                            <a href="#">장르음악</a>
+                        </li>
+                        <li class="nth4">
+                            <a href="http://qtrww.dothome.co.kr/melon/dj.html">멜론DJ</a>
+                        </li>
+                        <li class="nth5">
+                            <a href="#">멜론TV</a>
+                        </li>
+                        <li class="nth6">
+                            <a href="#">스타포스트</a>
+                        </li>
+                        <li class="nth7">
+                            <a href="#">매거진</a>
+                        </li>
+                        <li class="nth8">
+                            <a href="#">뮤직어워드</a>
+                        </li>
+                        <li class="nth9">
+                            <a href="#">어학</a>
+                        </li>
+                    </ul>
+                    <div class="sub_gnb">
+                        <a href="#">마이뮤직</a>
+                    </div>
+                    <div class="lay_menu">
+                        <ul>
+                            <li><a href="#">최신곡</a></li>
+                            <li><a href="#">최신앨범</a></li>
+                            <li><a href="#">최신 뮤직비디오</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="con">
+            <div class="contents">
+                <div class="contents1">
+                    <div id="page_header">
+                        <h2 class="title">최신곡</h2>
+                    </div>
+                    <div class="wrap_tab">
+                        <ul class="tab">
+                            <li><a href="#">국내</a></li>
+                            <li><a href="#">해외</a></li>
+                        </ul>
+                    </div>
+                    <div id="song_list">
+                        <form id="frm" name="frm">
+                            <div class="list">
+                                <div class="wrap_button">
+                                    <button type="button" title="선택된 곡 듣기"><img src="img/listen.png">듣기</button>
+                                    <button type="button" title="선택된 곡 담기"><img src="img/add.png">담기</button>
+                                    <button type="button" title="선택된 곡 다운로드"><img src="img/download.png">다운</button>
+                                    <button type="button" title="선택된 곡 원음다운로드"><img src="img/download.png">FLAC</button>
+                                    <button type="button" title="선택된 곡 선물하기"><img src="img/gift.png">선물</button>
+                                </div>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <td class="td1"><input type="checkbox" title="곡 목록 전체선택" class="check"></td>
+                                            <td class="td2">NO</td>
+                                            <td class="td3"><div class="display_none">앨범이미지</div></td>
+                                            <td class="td4"><div class="display_none">곡 상세</div></td>
+                                            <td class="td5 textleft">곡정보</td>
+                                            <td class="td6 textleft">앨범</td>
+                                            <td class="td7">좋아요</td>
+                                            <td class="td8">듣기</td>
+                                            <td class="td9">담기</td>
+                                            <td class="td10">다운</td>
+                                            <td class="td11">뮤비</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>1</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">BAD GIRL (Prod. Czaer)<br>
+                                                <span>라치카 (LACHICA), 청하</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">스트릿 우먼 파이터(SWF) Special</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">1234</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>2</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">가르치지마<br>
+                                                <span>에일리</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">AMY</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">5678</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>3</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">미워지지가 않아 (Unhateable)<br>
+                                                <span>노을</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">미워지지가 않아 (Unhateable)</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">905</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>4</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">불토(Fire Saturday)<br>
+                                                <span>SECRET NUMBER (시크릿넘버)</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">Fire Saturday</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">250</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>5</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">우린 노래가 될까<br>
+                                                <span>너드커넥션 (Nerd Connection)</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">New Century Masterpiece Cinema</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">480</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>6</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">나비효과<br>
+                                                <span>볼빨간사춘기</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">Butterfly Effect</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">1204</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>7</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">Favorite (Vampire)<br>
+                                                <span>NCT 127</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">Favorite - The 3rd Album Repackage</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">1677</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>8</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">BAD GIRL (Prod. Czaer)<br>
+                                                <span>라치카 (LACHICA), 청하</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">스트릿 우먼 파이터(SWF) Special</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">1234</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>9</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">가르치지마<br>
+                                                <span>에일리</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">AMY</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">5678</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>10</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">미워지지가 않아 (Unhateable)<br>
+                                                <span>노을</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">미워지지가 않아 (Unhateable)</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">905</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>11</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">불토(Fire Saturday)<br>
+                                                <span>SECRET NUMBER (시크릿넘버)</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">Fire Saturday</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">250</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>12</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">우린 노래가 될까<br>
+                                                <span>너드커넥션 (Nerd Connection)</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">New Century Masterpiece Cinema</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">480</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>13</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">나비효과<br>
+                                                <span>볼빨간사춘기</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">Butterfly Effect</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">1204</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>14</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">Favorite (Vampire)<br>
+                                                <span>NCT 127</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">Favorite - The 3rd Album Repackage</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">1677</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>15</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">BAD GIRL (Prod. Czaer)<br>
+                                                <span>라치카 (LACHICA), 청하</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">스트릿 우먼 파이터(SWF) Special</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">1234</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>16</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">가르치지마<br>
+                                                <span>에일리</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">AMY</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">5678</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>17</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">미워지지가 않아 (Unhateable)<br>
+                                                <span>노을</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">미워지지가 않아 (Unhateable)</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">905</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>18</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">불토(Fire Saturday)<br>
+                                                <span>SECRET NUMBER (시크릿넘버)</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">Fire Saturday</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">250</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>19</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">우린 노래가 될까<br>
+                                                <span>너드커넥션 (Nerd Connection)</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">New Century Masterpiece Cinema</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">480</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>20</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">나비효과<br>
+                                                <span>볼빨간사춘기</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">Butterfly Effect</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">1204</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>21</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">Favorite (Vampire)<br>
+                                                <span>NCT 127</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">Favorite - The 3rd Album Repackage</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">1677</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>22</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">BAD GIRL (Prod. Czaer)<br>
+                                                <span>라치카 (LACHICA), 청하</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">스트릿 우먼 파이터(SWF) Special</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">1234</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>23</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">가르치지마<br>
+                                                <span>에일리</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">AMY</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">5678</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>24</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">미워지지가 않아 (Unhateable)<br>
+                                                <span>노을</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">미워지지가 않아 (Unhateable)</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">905</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>25</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">불토(Fire Saturday)<br>
+                                                <span>SECRET NUMBER (시크릿넘버)</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">Fire Saturday</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">250</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>26</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">우린 노래가 될까<br>
+                                                <span>너드커넥션 (Nerd Connection)</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">New Century Masterpiece Cinema</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">480</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>27</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">나비효과<br>
+                                                <span>볼빨간사춘기</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">Butterfly Effect</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">1204</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>28</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">Favorite (Vampire)<br>
+                                                <span>NCT 127</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">Favorite - The 3rd Album Repackage</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">1677</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>29</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">BAD GIRL (Prod. Czaer)<br>
+                                                <span>라치카 (LACHICA), 청하</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">스트릿 우먼 파이터(SWF) Special</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">1234</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>30</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">가르치지마<br>
+                                                <span>에일리</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">AMY</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">5678</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>31</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">미워지지가 않아 (Unhateable)<br>
+                                                <span>노을</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">미워지지가 않아 (Unhateable)</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">905</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>32</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">불토(Fire Saturday)<br>
+                                                <span>SECRET NUMBER (시크릿넘버)</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">Fire Saturday</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">250</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>33</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">우린 노래가 될까<br>
+                                                <span>너드커넥션 (Nerd Connection)</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">New Century Masterpiece Cinema</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">480</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>34</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">나비효과<br>
+                                                <span>볼빨간사춘기</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">Butterfly Effect</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">1204</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>35</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">Favorite (Vampire)<br>
+                                                <span>NCT 127</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">Favorite - The 3rd Album Repackage</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">1677</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>36</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">BAD GIRL (Prod. Czaer)<br>
+                                                <span>라치카 (LACHICA), 청하</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">스트릿 우먼 파이터(SWF) Special</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">1234</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>37</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">가르치지마<br>
+                                                <span>에일리</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">AMY</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">5678</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>38</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">미워지지가 않아 (Unhateable)<br>
+                                                <span>노을</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">미워지지가 않아 (Unhateable)</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">905</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>39</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">불토(Fire Saturday)<br>
+                                                <span>SECRET NUMBER (시크릿넘버)</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">Fire Saturday</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">250</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>40</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">My Universe<br>
+                                                <span>Coldplay, 방탄소년단(BTS)</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">My Universe</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">613</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>41</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">우린 노래가 될까<br>
+                                                <span>너드커넥션 (Nerd Connection)</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">New Century Masterpiece Cinema</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">480</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>42</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">나비효과<br>
+                                                <span>볼빨간사춘기</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">Butterfly Effect</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">1204</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>43</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">Favorite (Vampire)<br>
+                                                <span>NCT 127</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">Favorite - The 3rd Album Repackage</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">1677</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>44</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">Elena Coda (Feat. 일레인)<br>
+                                                <span>015B</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">New Edition 34</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">015</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>45</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">IF I<br>
+                                                <span>백지영</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">연모 OST Part.3</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">123</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>46</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">Not Friends (ALAWN REMIX)<br>
+                                                <span>이달의 소녀</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">Not Friends Special Edition</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">512</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>47</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">TICK TOCK<br>
+                                                <span>JUST B (저스트비)</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">JUST BEAT</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">789</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>48</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">달 크레이터<br>
+                                                <span>김예지</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">달리와 감자탕 OST Part.7</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">654</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>49</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">Glow<br>
+                                                <span>Jimmy Brown, Rovv, Sweet The Kid</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">The Good Days Boys Vol.6</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">321</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" title="곡 선택" class="check"></td>
+                                            <td>50</td>
+                                            <td><div><img src="https://picsum.photos/60"></div></td>
+                                            <td><div><img src="img/info.png"></div></td>
+                                            <td class="b_td5 textleft">
+                                                <a href="#">안녕이 늦어서 미안해<br>
+                                                <span>디에이드 (The Ade)</span>
+                                                </a>
+                                            </td>
+                                            <td class="textleft">누군가의 플레이리스트 #1</td>
+                                            <td class="b_td7"><img src="img/e-heart.png">159</td>
+                                            <td><img src="img/listen_g.png"></td>
+                                            <td><img src="img/add2.png"></td>
+                                            <td><img src="img/download2.png"></td>
+                                            <td><img src="img/video.png"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section3">
+            <div class="bnav">
+                <ul>
+                    <li><a href="#">멜론 6.0 둘러보기</a></li>
+                    <li><a href="#">멜론스튜디오</a></li>
+                    <li><a href="#">windows 플레이어</a></li>
+                    <li><a href="#">Mac 플레이어</a></li>
+                    <li><a href="#">iPad</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </div>
+            <footer class="footer">
+                <ul class="footer_ul_1">
+                    <li><a href="#">이용약관</a></li>
+                    <li class="footer_text2"><a href="#">위치기반서비스 이용약관</a></li>
+                    <li class="footer_text3"><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">청소년보호정책</a></li>
+                    <li><a href="#">제휴/프로모션문의</a></li>
+                    <li><a href="#">이메일주소무단수집거부</a></li>
+                    <li><a href="#">파트너센터</a></li>
+                </ul>
+                <ul class="footer_ul_2">
+                    <li>(주)카카오엔터테인먼트</li>
+                    <li>>경기도 성남시 분당구 판교역로 221</li>
+                    <li>대표이사 : 이진수, 김성수</li>
+                    <li>사업자등록번호 : 220-88-02594</li>
+                    <li>통신판매업신고번호 : 2018-성남분당B-0004</li>
+                    <li><a href="#">사업자정보확인&gt;</a></li>
+                </ul>
+                <ul class="footer_ul_3">
+                    <li>문의전화 : 1566-7727(평일 09:00-18:00, 유료)</li>
+                    <li>이메일 : melon_info&commat;kakaoent.com</li>
+                    <li>호스팅서비스사업자 : (주)카카오엔터테인먼트</li>
+                    <li>&commat; Kakao Entertainment Corp.</li>
+                </ul>
+            </footer>
+        </div>
+    </wrap>
+</body>
+
+</html>
